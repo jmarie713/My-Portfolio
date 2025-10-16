@@ -333,19 +333,20 @@ button, a, .skill-box, .social-links a {
 
   /* ===== NAVIGATION FIX ===== */
   .nav-buttons {
-    display: flex;
-    flex-wrap: wrap;        /* Allow wrapping instead of hiding */
-    justify-content: center;
-    gap: 8px;
+    display: flex !important;
+    flex-wrap: wrap !important;   /* ✅ ensures wrapping actually applies */
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
   }
 
   .nav-btn {
-    flex: 1 1 45%;          /* Two buttons per row */
-    min-width: 140px;
-    margin-bottom: 6px;
-    font-size: 14px;
-    padding: 10px 0;
-    text-align: center;
+    flex: 1 1 45% !important;     /* ✅ two per row */
+    min-width: 120px !important;
+    text-align: center !important;
+    margin: 5px 0 !important;
+    font-size: 14px !important;
+    padding: 10px 0 !important;
   }
 
   /* Dark mode button reposition */
