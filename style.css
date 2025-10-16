@@ -308,12 +308,83 @@ button, a, .skill-box, .social-links a {
   color: #d36ba0 !important;
 }
 
+/* ===== MOBILE FIXES ===== */
 @media (max-width: 768px) {
-  .nav-buttons {
-    flex-wrap: wrap;
-    justify-content: center;
+
+  /* Make container full width and less padding */
+  .container {
+    padding: 20px 10px;
   }
+
+  /* Stack left and right sections vertically */
+  .row.g-4 {
+    flex-direction: column;
+  }
+
+  .col-lg-4, .col-lg-8 {
+    width: 100%;
+  }
+
+  /* Profile card spacing smaller */
+  .col-lg-4 .card {
+    padding: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  /* Navigation buttons scrollable row */
+  .nav-buttons {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    padding-bottom: 6px;
+  }
+
+  .nav-buttons::-webkit-scrollbar {
+    display: none;
+  }
+
   .nav-btn {
-    margin-bottom: 5px;
+    flex: 0 0 auto;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
+  /* Dark mode toggle icon smaller + reposition */
+  #toggle-theme {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  #toggle-theme i {
+    font-size: 18px;
+  }
+
+  /* Project images smaller */
+  .project-img {
+    height: 160px;
+  }
+
+  /* Reduce card padding */
+  .card.section {
+    padding: 1.5rem;
+  }
+
+  /* Center text a bit tighter */
+  p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 1rem;
   }
 }
+
