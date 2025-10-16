@@ -1,184 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio | Jaymarie Ilo</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armelyn Portfolio</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-purple" href="#">Armelyn M.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <div class="container py-5">
-    <div class="row g-4">
-      <!-- Left Section -->
-      <div class="col-lg-4">
-        <div class="card shadow-sm p-4 text-center">
-          <img src="img/profile.jpg" class="rounded-circle mx-auto mb-3 profile-img" alt="Profile Photo" width="130">
-          <h5 class="fw-bold mb-0">Jay Marie Ilo</h5>
-          <p class="text-muted">Frontend Developer</p>
-
-          <div class="social-links mb-3">
-  <a href="https://www.linkedin.com/in/jaymarie-ilo-21b117389/" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://github.com/jmarie713" target="_blank" aria-label="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://www.facebook.com/jmarie.ilo" target="_blank" aria-label="Facebook">
-    <i class="fab fa-facebook"></i>
-  </a>
-</div>
-
-          <div class="contact-info text-start mt-4">
-            <p><i class="fa-solid fa-phone"></i> +63 961 419 5345</p>
-            <p><i class="fa-solid fa-envelope"></i> jmarieilo647@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot"></i> Batangas City, Philippines</p>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section d-flex align-items-center text-center text-lg-start">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+        <div class="hero-text col-lg-6">
+          <p class="intro">Hey, I'm <span class="fw-semibold text-purple">Armelyn</span></p>
+          <h1><span class="highlight text-purple">Frontend</span> Developer</h1>
+          <p class="text-muted mt-3">
+            I’m a frontend developer who enjoys creating clean and easy-to-use
+            websites that deliver smooth user experiences.
+          </p>
+          <div class="mt-4">
+            <a href="#contact" class="btn btn-dark me-2">Get in Touch</a>
+            <a href="#projects" class="btn btn-outline-dark">Browse Projects</a>
           </div>
-
-          <button class="btn btn-danger w-100 mt-3">Download Resume</button>
+        </div>
+        <div class="hero-image col-lg-5 text-center mt-5 mt-lg-0">
+          <img src="profile.jpg" alt="Profile" class="profile-pic shadow-lg" />
         </div>
       </div>
+    </section>
 
-<!-- Right Section -->
-<div class="col-lg-8">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <div class="nav-buttons">
-      <button class="btn nav-btn active" data-section="home"><i class="fa-solid fa-house"></i> Home</button>
-      <button class="btn nav-btn" data-section="projects"><i class="fa-solid fa-file"></i> Projects</button>
-      <button class="btn nav-btn" data-section="experience"><i class="fa-solid fa-briefcase"></i> Experience</button>
-      <button class="btn nav-btn" data-section="contact"><i class="fa-solid fa-envelope"></i> Contacts</button>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section-padding bg-light text-center">
+      <div class="container">
+        <h2 class="fw-bold text-purple mb-3">About Me</h2>
+        <p class="mx-auto" style="max-width: 700px;">
+          I’m passionate about building elegant, user-friendly interfaces. With experience
+          in HTML, CSS, JavaScript, and frameworks like React, I strive to craft web
+          experiences that are responsive, accessible, and visually pleasing.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+   <section id="projects" class="section-padding text-center">
+  <div class="container">
+    <h2 class="fw-bold text-purple mb-3">Projects</h2>
+    <p class="text-muted mb-5">Here are some of my favorite works.</p>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <a href="https://github.com/armelyn15/Mabini-Tourist-Spot.git" target="_blank" class="text-decoration-none text-dark">
+          <div class="project-card p-4 shadow-sm rounded h-100">
+            <h5>Mabini Tourism Spot</h5>
+            <p>Shows the beautiful tourist spots in Mabini, Batangas.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="https://github.com/armelyn15/About-Me-Portfolio.git" target="_blank" class="text-decoration-none text-dark">
+          <div class="project-card p-4 shadow-sm rounded h-100">
+            <h5>My Portfolio</h5>
+            <p>A minimalist portfolio built with HTML, CSS, and JavaScript.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="https://github.com/armelyn15/Filesystem-Management---user-and-group-management.git" target="_blank" class="text-decoration-none text-dark">
+          <div class="project-card p-4 shadow-sm rounded h-100">
+            <h5>Linux User and Group Management</h5>
+            <p>Created Linux admin and staff users with access controls.</p>
+          </div>
+        </a>
+      </div>
+
     </div>
-    <button id="toggle-theme" class="btn btn-light rounded-circle"><i class="fa-solid fa-moon"></i></button>
   </div>
+</section>
 
-  <!-- ===== HOME SECTION ===== -->
-  <div class="card shadow-sm p-4 section active" id="home">
-    <h3 class="fw-bold mb-3">ABOUT ME</h3>
-    <p>Hi! I’m Jay Marie Ilo, a frontend developer who loves turning ideas into colorful, user-friendly websites. I enjoy mixing creativity with code to make the web a little more beautiful and a lot more fun. When I’m not coding, I’m probably learning something new or refining a tiny detail that makes a big difference.</p>
-
-    <h4 class="fw-bold mt-4 mb-3">What I do!</h4>
-    <div class="row g-3">
-      <div class="col-md-6">
-        <div class="p-3 skill-box">
-          <h6><i class="fa-solid fa-code"></i> Web Development</h6>
-          <p>I thrive on creating modern websites with clean layouts and smooth user experiences using HTML, CSS, JavaScript, and Python.</p>
+    <!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section-padding experience-bg text-center">
+  <div class="container">
+    <h2 class="fw-bold text-purple mb-3">Experience</h2>
+    <p class="text-muted mb-5">My academic and professional milestones.</p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="project-card p-4 shadow-sm rounded h-100">
+          <h5>College Level</h5>
+          <h6>Batangas State University TNEU</h6>
+          <p>2023 - Present</p>
+          <p>Currently taking BS Information Technology</p>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="p-3 skill-box">
-          <h6><i class="fa-solid fa-puzzle-piece"></i> System Development</h6>
-          <p>I focus on building functional dsystems with database integration, focusing on organized data flow and reliable performance.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="p-3 skill-box">
-          <h6><i class="fa-solid fa-palette"></i> UI/UX Designing</h6>
-          <p>I enjoy creating clean and easy-to-use designs that make systems simple and enjoyable to navigate.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="p-3 skill-box">
-          <h6><i class="fa-solid fa-book"></i> Continuous Learning</h6>
-          <p>I love discovering new ideas and tools that help me grow and improve in every project I make.</p>
+      <div class="col-md-4">
+        <div class="project-card p-4 shadow-sm rounded h-100">
+          <h5>Senior High School Graduate</h5>
+          <h6>Anselmo A. Sandoval MNHS</h6>
+          <p>2020-2021 | ICT Strand</p>
+          <p>Learned basic programming, design, and digital skills</p>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ===== PROJECTS SECTION ===== -->
-<div class="card shadow-sm p-4 section" id="projects">
-  <h3 class="fw-bold mb-3">PROJECTS</h3>
-  <div class="row g-3">
-    
-    <div class="col-md-6">
-      <a href="https://github.com/jmarie713/Mabini-Tourism-Page.git" target="_blank" class="text-decoration-none text-dark">
-        <div class="p-3 skill-box text-center">
-          <img src="img/tourism.jpg" alt="Mabini Tourism Page" class="project-img mb-3">
-          <h6><i class="fa-solid fa-plane"></i> MABINI TOURISM PAGE</h6>
-          <p> This website is to promote Mabini Tourism. Welcome to Mabini, Batangas.</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-md-6">
-      <a href="https://github.com/jmarie713/Library-Management-System.git" target="_blank" class="text-decoration-none text-dark">
-        <div class="p-3 skill-box text-center">
-          <img src="img/lms.jpg" alt="Library Management System" class="project-img mb-3">
-          <h6><i class="fa-solid fa-book"></i> LIBRARY MANAGEMENT SYSTEM</h6>
-          <p>A simple Library Management System using Python, Tkinter, XAMPP MySQL.</p>
-        </div>
-      </a>
-    </div>
-
-  </div>
-</div>
-
-  <!-- ===== EXPERIENCE SECTION ===== -->
-  <div class="card shadow-sm p-4 section" id="experience">
-  <h3 class="fw-bold mb-3">EXPERIENCE</h3>
-  <div class="row g-3">
-    <div class="col-md-6">
-      <div class="p-3 skill-box">
-        <h6><i class="fa-solid fa-building"></i> BATANGAS STATE UNIVERSITY - TNEU</h6>
-        <p>2023 - Present</p>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="p-3 skill-box">
-        <h6><i class="fa-solid fa-school"></i> ANSELMO A. SANDOVAL MNHS</h6>
-        <p>2017 - 2023</p>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-  <!-- ===== CONTACT SECTION ===== -->
-  <div class="card shadow-sm p-4 section" id="contact">
-    <h3 class="fw-bold mb-3">CONTACTS</h3>
-    <p>If you'd like to connect, feel free to reach out through any of the platforms below:</p>
-    <div class="row g-3">
-    <div class="col-md-6">
+  <!-- ===== CONTACT ===== -->
+<section id="contact" class="section-padding text-center">
+  <div class="container">
+    <h2 class="fw-bold text-purple mb-3">Contacts</h2>
+    <p class="mt-3 mb-4 text-muted">Let’s connect and build something great together!</p>
+<div class="row g-3">
+    <div class="col-md-4">
       <div class="p-3 skill-box">
         <h6><i class="fa-solid fa-envelope-open"></i> EMAIL</h6>
-        <p>jmarieilo647@gmail.com</p>
+        <p>armelynmacedonio133@gmail.com</p>
       </div>
     </div>
-
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="p-3 skill-box">
         <h6><i class="fa-solid fa-phone"></i> TELEPHONE</h6>
-        <p>+63 961 419 5345</p>
+        <p>+63 910 412 8998</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 skill-box">
+        <h6><i class="fa-solid fa-house"></i> LOCATION</h6>
+        <p>Batangas City, Philippines</p>
       </div>
     </div>
 
-<div class="social-links mb-3">
-  <a href="https://www.linkedin.com/in/jaymarie-ilo-21b117389/" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://github.com/jmarie713" target="_blank" aria-label="GitHub">
+    <!-- Social Icons -->
+    <div class="social-icons mt-4">
+  <a href="https://github.com/yourusername" target="_blank">
     <i class="fab fa-github"></i>
   </a>
-  <a href="https://www.facebook.com/jmarie.ilo" target="_blank" aria-label="Facebook">
-    <i class="fab fa-facebook"></i>
+  <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+    <i class="fab fa-linkedin"></i>
   </a>
 </div>
+</section>
 
-  </div>
-</div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="text-center py-3 bg-white">
+      <p class="text-muted mb-0">© 2025 Armelyn D. All rights reserved.</p>
+    </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom Script -->
-  <script src="script.js"></script>
-</body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
 </html>
