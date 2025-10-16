@@ -308,10 +308,10 @@ button, a, .skill-box, .social-links a {
   color: #d36ba0 !important;
 }
 
-/* ===== MOBILE FIXES ===== */
+/* ===== IMPROVED MOBILE FIXES ===== */
 @media (max-width: 768px) {
 
-  /* Make container full width and less padding */
+  /* Container adjustments */
   .container {
     padding: 20px 10px;
   }
@@ -325,34 +325,30 @@ button, a, .skill-box, .social-links a {
     width: 100%;
   }
 
-  /* Profile card spacing smaller */
+  /* Profile card */
   .col-lg-4 .card {
     padding: 1.5rem;
     margin-bottom: 15px;
   }
 
-  /* Navigation buttons scrollable row */
+  /* ===== NAVIGATION FIX ===== */
   .nav-buttons {
     display: flex;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;        /* Allow wrapping instead of hiding */
+    justify-content: center;
     gap: 8px;
-    padding-bottom: 6px;
-  }
-
-  .nav-buttons::-webkit-scrollbar {
-    display: none;
   }
 
   .nav-btn {
-    flex: 0 0 auto;
+    flex: 1 1 45%;          /* Two buttons per row */
+    min-width: 140px;
+    margin-bottom: 6px;
     font-size: 14px;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 10px 0;
+    text-align: center;
   }
 
-  /* Dark mode toggle icon smaller + reposition */
+  /* Dark mode button reposition */
   #toggle-theme {
     position: fixed;
     bottom: 15px;
@@ -360,7 +356,7 @@ button, a, .skill-box, .social-links a {
     z-index: 1000;
     width: 45px;
     height: 45px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
   }
 
   #toggle-theme i {
@@ -374,10 +370,10 @@ button, a, .skill-box, .social-links a {
 
   /* Reduce card padding */
   .card.section {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
-  /* Center text a bit tighter */
+  /* Text scaling */
   p {
     font-size: 15px;
     line-height: 1.4;
@@ -387,4 +383,5 @@ button, a, .skill-box, .social-links a {
     font-size: 1rem;
   }
 }
+
 
