@@ -342,7 +342,7 @@ button, a, .skill-box, .social-links a {
 
   .nav-btn {
     flex: 1 1 45% !important;     /* ✅ two per row */
-    min-width: 120px !important;
+    min-width: 100px !important;
     text-align: center !important;
     margin: 5px 0 !important;
     font-size: 14px !important;
