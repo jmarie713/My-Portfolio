@@ -4,7 +4,7 @@ A responsive, modern portfolio website showcasing my skills, projects, and exper
 
 ## 🚀 Live Demo
 
-https://jmarie713.github.io/My-Portfolio/
+(https://jmarie713.github.io/My-Portfolio/)
 
 ## 📋 Overview
 
@@ -49,3 +49,4 @@ This portfolio website features:
 1. Clone the repository:
    ```bash
    git clone https://github.com/jmarie713/My-Portfolio.git
+
