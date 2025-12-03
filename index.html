@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Jaymarie Ilo</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Left Section -->
+      <div class="col-lg-4">
+        <div class="card shadow-sm p-4 text-center">
+          <img src="img/profile.jpg" class="rounded-circle mx-auto mb-3 profile-img" alt="Profile Photo" width="130">
+          <h5 class="fw-bold mb-0">Jay Marie Ilo</h5>
+          <p class="text-muted">Frontend Developer</p>
+
+          <div class="social-links mb-3">
+  <a href="https://www.linkedin.com/in/jaymarie-ilo-21b117389/" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/jmarie713" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.facebook.com/jmarie.ilo" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+</div>
+
+          <div class="contact-info text-start mt-4">
+            <p><i class="fa-solid fa-phone"></i> +63 961 419 5345</p>
+            <p><i class="fa-solid fa-envelope"></i> jmarieilo647@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Batangas City, Philippines</p>
+          </div>
+
+          <div class="mt-3">
+      <a href="myresume.pdf" 
+         class="btn btn-outline-dark btn-lg px-4" 
+         download="Jay_Marie_Ilo_Resume.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fas fa-download me-2"></i>Download Resume
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+
+    <!-- Right Section -->
+    <div class="col-lg-8">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="nav-buttons">
+          <button class="btn nav-btn active" data-section="home"><i class="fa-solid fa-house"></i> Home</button>
+          <button class="btn nav-btn" data-section="projects"><i class="fa-solid fa-file"></i> Projects</button>
+          <button class="btn nav-btn" data-section="experience"><i class="fa-solid fa-briefcase"></i> Experience</button>
+          <button class="btn nav-btn" data-section="contact"><i class="fa-solid fa-envelope"></i> Contacts</button>
+        </div>
+        <button id="toggle-theme" class="btn btn-light rounded-circle"><i class="fa-solid fa-moon"></i></button>
+      </div>
+
+      <!-- ===== HOME SECTION ===== -->
+      <div class="card shadow-sm p-4 section active" id="home">
+        <h3 class="fw-bold mb-3">ABOUT ME</h3>
+        <p>Hi! I’m Jay Marie Ilo, a frontend developer who loves turning ideas into colorful, user-friendly websites. I enjoy mixing creativity with code to make the web a little more beautiful and a lot more fun. When I’m not coding, I’m probably learning something new or refining a tiny detail that makes a big difference.</p>
+
+        <h4 class="fw-bold mt-4 mb-3">What I do!</h4>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="p-3 skill-box">
+              <h6><i class="fa-solid fa-code"></i> Web Development</h6>
+              <p>I thrive on creating modern websites with clean layouts and smooth user experiences using HTML, CSS, JavaScript, and Python.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 skill-box">
+              <h6><i class="fa-solid fa-puzzle-piece"></i> System Development</h6>
+              <p>I focus on building functional dsystems with database integration, focusing on organized data flow and reliable performance.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 skill-box">
+              <h6><i class="fa-solid fa-palette"></i> UI/UX Designing</h6>
+              <p>I enjoy creating clean and easy-to-use designs that make systems simple and enjoyable to navigate.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 skill-box">
+              <h6><i class="fa-solid fa-book"></i> Continuous Learning</h6>
+              <p>I love discovering new ideas and tools that help me grow and improve in every project I make.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== PROJECTS SECTION ===== -->
+<div class="card shadow-sm p-4 section" id="projects">
+  <h3 class="fw-bold mb-3">PROJECTS</h3>
+  <div class="row g-3">
+    
+    <div class="col-md-6">
+        <div class="p-3 skill-box text-center">
+          <img src="img/tourism.jpg" alt="Mabini Tourism Page" class="project-img mb-3">
+          <h6>MABINI TOURISM PAGE</h6>
+          <p> This website is to promote Mabini Tourism. Welcome to Mabini, Batangas.</p>
+          <p>⠀⠀</p>
+          <div class="d-flex justify-content-center gap-2">
+            <a href="https://mabini-tourism-homepage-jaymarie-7mq7uvhkp.vercel.app" class="btn btn-outline-primary btn-sm" target="_blank">Live Demo</a>
+            <a href="https://github.com/jmarie713/Mabini-Tourism-Page.git" class="btn btn-outline-secondary btn-sm">Source Code</a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6">
+        <div class="p-3 skill-box text-center">
+          <img src="img/ecommerce.jpg" alt="Library Management System" class="project-img mb-3">
+          <h6>JMI Furniture</h6>
+          <p>A simple furniture E-Commerce Website.</p>
+          <p>⠀⠀</p>
+          <div class="d-flex justify-content-center gap-2">
+            <a href="https://jmarie713.github.io/JMI-Furniture/" class="btn btn-outline-primary btn-sm" target="_blank">Live Demo</a>
+            <a href="https://github.com/jmarie713/JMI-Furniture" class="btn btn-outline-secondary btn-sm">Source Code</a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6">
+        <div class="p-3 skill-box text-center">
+          <img src="img/sushikami.png" alt="Library Management System" class="project-img mb-3">
+          <h6>SushiKami</h6>
+          <p>A sushi online-ordering.</p>
+          <p>⠀⠀</p>
+          <div class="d-flex justify-content-center gap-2">
+            <a href="https://jmarie713.github.io/SushiKami/login.html" class="btn btn-outline-primary btn-sm" target="_blank">Live Demo</a>
+            <a href="https://github.com/jmarie713/SushiKami.git" class="btn btn-outline-secondary btn-sm">Source Code</a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6">
+        <div class="p-3 skill-box text-center">
+          <img src="img/lms.jpg" alt="Library Management System" class="project-img mb-3">
+          <h6>LIBRARY MANAGEMENT SYSTEM</h6>
+          <p>A simple Library Management System using Python, Tkinter, XAMPP MySQL.</p>
+          <p>⠀⠀</p>
+          <div class="d-flex justify-content-center gap-2">
+            <a href="https://github.com/jmarie713/Library-Management-System.git" class="btn btn-outline-secondary btn-sm">Source Code</a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6">
+        <div class="p-3 skill-box text-center">
+          <img src="img/portfolio.jpg" alt="My Portfolio" class="project-img mb-3">
+          <h6>MY PORTFOLIO</h6>
+          <p>A simple portfolio using HTML, CSS, JavaScript, and Bootstrap.</p>
+          <p>⠀⠀</p>
+          <div class="d-flex justify-content-center gap-2">
+            <a href="https://jmarie713.github.io/My-Portfolio/" class="btn btn-outline-primary btn-sm" target="_blank">Live Demo</a>
+            <a href="https://github.com/jmarie713/My-Portfolio.git" class="btn btn-outline-secondary btn-sm">Source Code</a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <div class="card shadow-sm p-4 section" id="experience">
+  <h3 class="fw-bold mb-3">EXPERIENCE</h3>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="p-3 skill-box">
+        <h6><i class="fa-solid fa-building"></i> BATANGAS STATE UNIVERSITY - TNEU</h6>
+        <h6>2023 - Present</h6>
+        <p>BS Information Technology - Service Management</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="p-3 skill-box">
+        <h6><i class="fa-solid fa-school"></i> ANSELMO A. SANDOVAL MNHS</h6>
+        <h6>2017-2023 | Senior High School Graduate</h6>
+        <p>ICT Strand</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- ===== CONTACT SECTION ===== -->
+<div class="card shadow-sm p-4 section" id="contact">
+  <h3 class="fw-bold mb-3">CONTACTS</h3>
+  <p>If you'd like to connect, feel free to reach out through any of the platforms below:</p>
+  <div class="row g-3">
+    <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%;">
+      <div class="p-3 skill-box" style="height: 100%; min-height: 120px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h6><i class="fa-solid fa-envelope-open"></i> EMAIL</h6>
+        <p>jmarieilo647@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%;">
+      <div class="p-3 skill-box" style="height: 100%; min-height: 120px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h6><i class="fa-solid fa-phone"></i> TELEPHONE</h6>
+        <p>+63 961 419 5345</p>
+      </div>
+    </div>
+
+    <div class="social-links mb-3">
+      <a href="https://www.linkedin.com/in/jaymarie-ilo-21b117389/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/jmarie713" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.facebook.com/jmarie.ilo" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

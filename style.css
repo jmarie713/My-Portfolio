@@ -1,0 +1,556 @@
+/* ===== BASE STYLES ===== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: radial-gradient(circle at top left, #E6E6FA, #FFD1DC, #fce1f3);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Section Title Accent === */
+.section h3 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.section h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: #d36ba0;
+  border-radius: 3px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border-radius: 25px;
+  border: none;
+  background-color: #fffafc; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-img {
+  border: 4px solid #d36ba0;
+  box-shadow: 0 0 20px rgba(211,107,160,0.4);
+}
+
+/* Ensure consistent container sizes across pages */
+.container {
+  max-width: 1200px; /* Set a consistent maximum width */
+  width: 100%; /* Ensure full width within the max-width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Uniform padding */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+/* ==== CONTACT INFO ==== */
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  margin: 6px 0;
+}
+
+.contact-info i {
+  color: #d36ba0; 
+}
+
+#contact .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Center contact boxes and social links in CONTACT section */
+#contact .row {
+  justify-content: center;
+  text-align: center;
+}
+
+#contact .skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center social icons under contacts */
+#contact .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#contact .social-links a {
+  margin: 0 12px;
+}
+
+/* ===== SOCIAL LINKS ===== */
+.social-links a {
+  color: #555;
+  margin: 0 10px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  color: #d36ba0; 
+  transform: scale(1.2);
+  text-decoration: none; 
+}
+
+/* ===== NAV BUTTONS ===== */
+.nav-btn {
+  background-color: #f8e9f4;
+  border-radius: 10px;
+  margin-right: 5px;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.nav-btn.active, .nav-btn:hover {
+  background-color: #d36ba0;
+  color: white;
+  box-shadow: 0 0 10px rgba(211,107,160,0.5);
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; 
+  flex-shrink: 0;
+}
+
+.nav-btn {
+  white-space: nowrap; 
+  padding: 8px 18px;
+  min-width: 100px; 
+}
+
+#experience .skill-box {
+  margin-bottom: 10px;
+}
+
+/* ===== SKILL BOXES ===== */
+.skill-box {
+  background-color: #f3e9fa; 
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+/* === Card + Icon Hovers === */
+.skill-box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(211,107,160,0.25);
+}
+
+.social-links a:hover {
+  color: #d36ba0;
+  transform: rotate(8deg) scale(1.3);
+}
+
+/* Smooth hover transitions for all interactive items */
+button, a, .skill-box, .social-links a {
+  transition: all 0.3s ease;
+}
+
+.row.g-4 {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.col-lg-4,
+.col-lg-8 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-lg-4 {
+  order: -1;
+  width: 100%;
+  max-width: 800px;
+}
+
+.col-lg-8 {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.col-lg-4 .card,
+.col-lg-8 .card.section.active {
+  flex: 1;
+}
+
+.col-lg-4 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.profile-img {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-danger {
+  background-color: #d36ba0 !important;
+  border: none;
+}
+.btn-danger:hover {
+  background-color: #c55a94 !important;
+}
+
+/* Update Download Resume Button to match navigation bar buttons */
+.btn-outline-dark {
+  background-color: #f8e9f4; /* Match nav button background */
+  border-radius: 10px; /* Match nav button border radius */
+  color: #333; /* Match nav button text color */
+  transition: all 0.3s; /* Smooth transition */
+  border: none; /* Remove border */
+}
+
+.btn-outline-dark:hover {
+  background-color: #d36ba0; /* Match hover background */
+  color: white; /* Match hover text color */
+  box-shadow: 0 0 10px rgba(211,107,160,0.5); /* Match hover shadow */
+}
+
+/* Remove black border on hover for Download Resume button */
+.btn-outline-dark:hover {
+  border: 1px solid transparent; /* Remove border on hover */
+}
+
+/* Add pink thin border to Download Resume button in light mode */
+.btn-outline-dark {
+  border: 1px solid #d36ba0; /* Pink thin border */
+}
+
+/* Minimize font size of Download Resume text */
+.btn-outline-dark {
+  font-size: 14px; /* Match font size with other texts */
+}
+
+/* Update Download Resume Button in dark mode to match navigation bar buttons */
+.dark-mode .btn-outline-dark {
+  background-color: #3a3a4a !important; /* Match dark mode nav button background */
+  color: #f1f1f1 !important; /* Match dark mode nav button text color */
+  border: none !important; /* Remove border */
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: #d36ba0 !important; /* Match dark mode hover background */
+  color: #fff !important; /* Match dark mode hover text color */
+  box-shadow: 0 0 10px rgba(211,107,160,0.5) !important; /* Match hover shadow */
+}
+
+/* Ensure visibility of Download Resume button in dark mode */
+.dark-mode .btn-outline-dark {
+  background-color: #fff !important; /* Light background for contrast */
+  color: #333 !important; /* Dark text for readability */
+  border-color: #ccc !important; /* Adjust border for visibility */
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: #f8f9fa !important; /* Slightly darker hover effect */
+  color: #000 !important;
+}
+
+.section {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.section.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.btn-danger {
+  position: relative;
+  overflow: hidden;
+}
+.btn-danger::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: left 0.3s;
+}
+.btn-danger:hover::after {
+  left: 100%;
+}
+
+/* ===== PROJECT IMAGES ===== */
+.project-img {
+  width: 100%;                 
+  height: 200px;              
+  object-fit: cover;          
+  border-radius: 15px;        
+  box-shadow: 0 4px 10px rgba(211,107,160,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;            
+}
+
+.skill-box:hover .project-img {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(211,107,160,0.3);
+}
+
+/* ===== FIX PROJECT CARD SIZE ===== */
+#projects .skill-box {
+  max-width: 100%;
+  padding: 1rem 1rem !important;
+  border-radius: 15px;
+  background-color: #f7effa;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .skill-box h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#projects .skill-box p {
+  font-size: 0.85rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Smaller and consistent project images */
+#projects .project-img {
+  width: 100%;
+  max-width: 250px;        /* Limit image width */
+  height: 150px;           /* Smaller height */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(211,107,160,0.2);
+}
+
+/* ===== DARK MODE ===== */
+.dark-mode {
+  background: linear-gradient(135deg, #2b2b3d, #3a2b3d);
+  color: #f1f1f1;
+}
+
+.dark-mode .card {
+  background-color: #1f1f2b !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .skill-box {
+  background-color: #2a2a3a !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .nav-btn {
+  background-color: #3a3a4a !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .nav-btn.active {
+  background-color: #d36ba0 !important;
+  color: #fff !important;
+}
+
+.dark-mode .btn-light {
+  background-color: #444 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .contact-info p i {
+  color: #d36ba0 !important;
+}
+
+.dark-mode .text-muted {
+  color: #d36ba0 !important;
+}
+
+/* ADD THESE LINES FOR PROJECT BUTTONS VISIBILITY */
+.dark-mode .btn-outline-primary,
+.dark-mode .btn-outline-secondary {
+  color: #f1f1f1 !important;
+  border-color: #d36ba0 !important;
+}
+
+.dark-mode .btn-outline-primary:hover,
+.dark-mode .btn-outline-secondary:hover {
+  background-color: #d36ba0 !important;
+  color: #fff !important;
+}
+
+
+/* ===== IMPROVED MOBILE FIXES ===== */
+@media (max-width: 768px) {
+
+  /* Container adjustments */
+  .container {
+    padding: 20px 10px;
+  }
+
+  /* Stack left and right sections vertically */
+  .row.g-4 {
+    flex-direction: column;
+  }
+
+  .col-lg-4, .col-lg-8 {
+    width: 100%;
+  }
+
+  /* Profile card */
+  .col-lg-4 .card {
+    padding: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  /* ===== NAVIGATION FIX FOR MOBILE (Flexbox version) ===== */
+  .d-flex.justify-content-between.align-items-center.mb-4 {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Navigation buttons wrapper */
+  .nav-buttons {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Individual nav buttons */
+  .nav-btn {
+    flex: 0 0 calc(50% - 5px) !important;
+    width: calc(50% - 5px) !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+    padding: 12px 5px !important;
+    min-width: unset !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Dark mode button reposition */
+  #toggle-theme {
+    position: fixed;
+    bottom: 20px; /* Position 20px from the bottom */
+    right: 20px; /* Position 20px from the right */
+    z-index: 1000; /* Ensure it stays above other elements */
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  }
+
+  #toggle-theme i {
+    font-size: 18px;
+  }
+
+  /* Project images smaller */
+  .project
+  .card.section {
+    padding: 1.2rem;
+  }
+
+  /* Text scaling */
+  p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 1rem;
+  }
+}
+
+/* Adjust spacing after navigation bars in sections */
+#contact {
+  margin-top: 20px; /* Reduce excessive space */
+  max-width: 1200px; /* Match the maximum width of experience page containers */
+  margin: 0 auto; /* Center the container */
+}
+
+#experience {
+  margin-top: 20px; /* Reduce excessive space */
+}
+
+#projects {
+  margin-top: 20px; /* Reduce excessive space */
+}
+
+/* Style for Live Demo and Source Code buttons */
+.btn-outline-primary, .btn-outline-secondary {
+  border: 1px solid #d36ba0; /* Pink thin border */
+  color: #333; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-outline-primary:hover, .btn-outline-secondary:hover {
+  background-color: #d36ba0; /* Pink background on hover */
+  color: #fff; /* White text on hover */
+  box-shadow: 0 0 10px rgba(211,107,160,0.5); /* Glow effect */
+}
+
+/* Ensure text for Live Demo and Source Code buttons is visible in dark mode */
+.project-buttons a {
+    color: #ffffff; /* Set text color to white for visibility */
+    text-decoration: none; /* Remove underline for better appearance */
+}
+
+/* Optional: Add hover effect for better user experience */
+.project-buttons a:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+
+#contact .row > div {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
